@@ -1,0 +1,12 @@
+# ContainerLabPy Architecture Diagram
+
+This diagram illustrates the high-level architecture of ContainerLabPy.
+
+```
+graph TD
+    A[User Test Code] --> B[ContainerLabPy Core]
+    B --> C[Docker Engine]
+    C --> D[Container Instances]
+    B --> E[Test Utilities]
+    E --> A
+```

@@ -1,0 +1,17 @@
+# ContainerLabPy Testing Diagram
+
+This diagram shows the testing workflow for ContainerLabPy.
+
+```
+sequenceDiagram
+    participant Dev as Developer
+    participant CLP as ContainerLabPy
+    participant Docker as Docker Engine
+    participant C as Container
+    Dev->>CLP: Define test
+    CLP->>Docker: Start container
+    Docker->>C: Create instance
+    CLP->>C: Run test commands
+    C->>CLP: Return results
+    CLP->>Dev: Report outcome
+```
