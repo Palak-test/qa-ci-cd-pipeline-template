@@ -22,36 +22,13 @@ ContainerLabPy is a Python library designed to simplify the creation and managem
 
 The following diagram illustrates the high-level architecture of ContainerLabPy:
 
-![Architecture Diagram](docs/architecture-diagram.png)
-
-```
-graph TD
-	A[User Test Code] --> B[ContainerLabPy Core]
-	B --> C[Docker Engine]
-	C --> D[Container Instances]
-	B --> E[Test Utilities]
-	E --> A
-```
+![Architecture Diagram](docs/architecture-diagram.svg)
 
 ## Testing Workflow
 
 ContainerLabPy provides a robust testing workflow:
 
-![Testing Diagram](docs/testing-diagram.png)
-
-```
-sequenceDiagram
-	participant Dev as Developer
-	participant CLP as ContainerLabPy
-	participant Docker as Docker Engine
-	participant C as Container
-	Dev->>CLP: Define test
-	CLP->>Docker: Start container
-	Docker->>C: Create instance
-	CLP->>C: Run test commands
-	C->>CLP: Return results
-	CLP->>Dev: Report outcome
-```
+![Testing Diagram](docs/testing-diagram.svg)
 
 ## Getting Started
 
