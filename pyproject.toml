@@ -1,0 +1,14 @@
+# ContainerLabPy
+
+pyproject.toml
+
+[project]
+name = "containerlabpy"
+version = "0.1.0"
+description = "A Python library for containerized testing environments."
+authors = ["ContainerLabPy Team <team@example.com>"]
+license = "MIT"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
